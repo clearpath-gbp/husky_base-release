@@ -1,3 +1,24 @@
+## husky_base (indigo) - 0.1.2-0
+
+The packages in the `husky_base` repository were released into the `indigo` distro by running `/usr/bin/bloom-release husky_base --rosdistro indigo --track indigo` on `Tue, 20 Jan 2015 15:45:50 -0000`
+
+The `husky_base` package was released.
+
+Version of package(s) in repository `husky_base`:
+- upstream repository: https://github.com/husky/husky_base.git
+- release repository: https://github.com/clearpath-gbp/husky_base-release.git
+- rosdistro version: `0.1.1-0`
+- old version: `0.1.1-0`
+- new version: `0.1.2-0`
+
+Versions of tools used:
+- bloom version: `0.5.16`
+- catkin_pkg version: `0.2.6`
+- rosdep version: `0.11.0`
+- rosdistro version: `0.4.0`
+- vcstools version: `0.1.36`
+
+
 ## husky_base (indigo) - 0.1.1-0
 
 The packages in the `husky_base` repository were released into the `indigo` distro by running `/usr/bin/bloom-release husky_base --rosdistro indigo --track indigo` on `Tue, 13 Jan 2015 17:53:23 -0000`
