@@ -2,6 +2,11 @@
 Changelog for package husky_base
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.1.2 (2015-01-20)
+------------------
+* Fix library install location
+* Contributors: Paul Bovbel
+
 0.1.1 (2015-01-13)
 ------------------
 * Add missing description dependency
