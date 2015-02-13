@@ -1,7 +1,7 @@
 /**
 *
 *  \author     Paul Bovbel <pbovbel@clearpathrobotics.com>
-*  \copyright  Copyright (c) 2014, Clearpath Robotics, Inc.
+*  \copyright  Copyright (c) 2014-2015, Clearpath Robotics, Inc.
 *
 * Redistribution and use in source and binary forms, with or without
 * modification, are permitted provided that the following conditions are met:
@@ -51,7 +51,7 @@ namespace husky_base
   class HuskyHardware : public hardware_interface::RobotHW
   {
   public:
-    HuskyHardware(ros::NodeHandle nh, ros::NodeHandle private_nh);
+    HuskyHardware(ros::NodeHandle nh, ros::NodeHandle private_nh, double target_control_freq);
 
     void updateJointsFromHardware();
 
@@ -59,10 +59,9 @@ namespace husky_base
 
     void updateDiagnostics();
 
-    void reportLoopFrequency(const ros::TimerEvent &control_event);
+    void reportLoopDuration(const ros::Duration &duration);
 
   private:
-    void connect(std::string port);
 
     void initializeDiagnostics();
 
@@ -93,6 +92,8 @@ namespace husky_base
 
     // ROS Parameters
     double wheel_diameter_, max_accel_, max_speed_;
+
+    double polling_timeout_;
 
     /**
     * Joint structure that is hooked to ros_control's InterfaceManager, to allow control via diff_drive_controller
