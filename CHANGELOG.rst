@@ -2,6 +2,11 @@
 Changelog for package husky_base
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.1.5 (2015-02-19)
+------------------
+* Fix duration cast
+* Contributors: Paul Bovbel
+
 0.1.4 (2015-02-13)
 ------------------
 * Correct issues with ROS time discontinuities - now using monotonic time source
